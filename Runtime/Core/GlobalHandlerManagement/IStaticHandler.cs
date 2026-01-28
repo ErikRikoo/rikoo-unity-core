@@ -1,4 +1,4 @@
-﻿namespace Script.Runtime.Core.GlobalHandlerManagement
+﻿namespace Rikoo.Core.GlobalHandlerManagement
 {
     public interface IStaticHandler
     {

@@ -1,8 +1,7 @@
-﻿using System;
-using Core.GameplayElementCode;
+﻿using Rikoo.Core.GameplayElementCode;
 using UnityEngine;
 
-namespace Script.Runtime.Core.GlobalHandlerManagement
+namespace Rikoo.Core.GlobalHandlerManagement
 {
     public class GlobalGPEBehaviour<T> : GameplayElementBehaviour where T : GlobalGPEBehaviour<T>
     {

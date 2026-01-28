@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
-namespace Script.Runtime.Core.Rooting.Editor
+namespace Rikoo.Framework.Core.Rooting.Editor
 {
     public class MandatorySceneLoadingHelper
     {

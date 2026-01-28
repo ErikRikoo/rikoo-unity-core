@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Script.Runtime.Core.GameAction
+namespace Rikoo.Core.GameAction
 {
     public struct GameActionContext
     {

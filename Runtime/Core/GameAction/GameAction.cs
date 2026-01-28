@@ -1,7 +1,7 @@
-﻿using Script.Runtime.Core.Data;
+﻿using Rikoo.Core.Data;
 using UnityEngine;
 
-namespace Script.Runtime.Core.GameAction
+namespace Rikoo.Core.GameAction
 {
     [CreateAssetMenu(fileName = "GameAction", menuName = "Core/Game Action", order = 0)]
     public class GameAction : ScriptableObject, IGameData

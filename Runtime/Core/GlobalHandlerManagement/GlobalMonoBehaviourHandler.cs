@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Script.Runtime.Core.GlobalHandlerManagement
+namespace Rikoo.Core.GlobalHandlerManagement
 {
     public class GlobalMonoBehaviourHandler<T> : MonoBehaviour where T : GlobalMonoBehaviourHandler<T>
     {

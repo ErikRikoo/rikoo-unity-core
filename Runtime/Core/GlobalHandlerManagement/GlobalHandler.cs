@@ -1,6 +1,5 @@
-﻿using UnityEngine;
-
-namespace Script.Runtime.Core.GlobalHandlerManagement
+﻿
+namespace Rikoo.Core.GlobalHandlerManagement
 {
     public class GlobalHandler<T> where T : GlobalHandler<T>
     {

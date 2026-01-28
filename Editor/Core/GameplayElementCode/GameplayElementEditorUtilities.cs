@@ -1,11 +1,11 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Core.GameplayElementCode
+namespace Rikoo.Framework.Core.GameplayElementCode
 {
     public static class GameplayElementEditorUtilities
     {
-        [MenuItem("GameObject/Foxxy/GPE/Create GPE")]
+        [MenuItem("GameObject/Rikoo/GPE/Create GPE")]
         public static void CreateSimpleGPE()
         {
             var createdGameObject = new GameObject("GPE");

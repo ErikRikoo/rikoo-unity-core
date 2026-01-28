@@ -1,7 +1,7 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Script.Runtime.Core.GameAction
+namespace Rikoo.Core.GameAction
 {
     [CreateAssetMenu(fileName = "GameActionList", menuName = "Core/Game Action List", order = 0)]
     public class GameActionList : GameAction

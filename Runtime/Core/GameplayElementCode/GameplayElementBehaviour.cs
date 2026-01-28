@@ -1,9 +1,7 @@
-using NUnit.Framework.Constraints;
-using Script.Runtime.Core.Notification;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Core.GameplayElementCode
+namespace Rikoo.Core.GameplayElementCode
 {
     public class GameplayElementBehaviour : MonoBehaviour, ISearchFilterable
     {

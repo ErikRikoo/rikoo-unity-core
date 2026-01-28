@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using Script.Runtime.Core.GlobalHandlerManagement;
-using Script.Runtime.UI.Player;
+using Rikoo.Core.GlobalHandlerManagement;
 using UnityEngine;
 
-namespace Script.Runtime.Core.Lifecycle
+namespace Rikoo.Core.Lifecycle
 {
     public partial class LifecycleHandler : GlobalMonoBehaviourHandler<LifecycleHandler>, IStaticHandler
     {

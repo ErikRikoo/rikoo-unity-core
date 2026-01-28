@@ -1,0 +1,18 @@
+{
+    "name": "com.rikoo.framework.core.editor",
+    "rootNamespace": "Rikoo.Framework",
+    "references": [
+        "GUID:621a9a54f748b0343906b15a23e12750"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "Editor"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

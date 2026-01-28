@@ -1,4 +1,5 @@
-﻿namespace Script.Runtime.Core.Notification
+﻿
+namespace Rikoo.Core.Notification
 {
     public static partial class ErrorType
     {

@@ -1,13 +1,11 @@
-using System;
 using System.Collections.Generic;
-using Core.GameplayElementCode.Lifecycle;
-using Script.Runtime.Core.Data;
-using Script.Runtime.Core.Notification;
-using Script.Runtime.Entity;
+using Rikoo.Core.Data;
+using Rikoo.Core.GameplayElementCode.Lifecycle;
+using Rikoo.Core.Notification;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Core.GameplayElementCode
+namespace Rikoo.Core.GameplayElementCode
 {
     public partial class GameplayElement : MonoBehaviour
     {

@@ -1,11 +1,11 @@
-﻿using Core.GameplayElementCode.Lifecycle;
-using Script.Runtime.Core.Notification;
+﻿using Rikoo.Core.GameplayElementCode.Lifecycle;
+using Rikoo.Core.Notification;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities.Editor;
 using UnityEditor;
 using UnityEngine;
 
-namespace Core.GameplayElementCode
+namespace Rikoo.Core.GameplayElementCode
 {
     public partial class GameplayElement
     {

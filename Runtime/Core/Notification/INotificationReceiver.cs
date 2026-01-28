@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Script.Runtime.Core.Notification
+namespace Rikoo.Core.Notification
 {
     public interface INotificationReceiver
     {

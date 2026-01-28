@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Script.Runtime.Core.GlobalHandlerManagement;
+using Rikoo.Core.GlobalHandlerManagement;
 using UnityEngine;
 
-namespace Script.Runtime.Core.Notification
+namespace Rikoo.Core.Notification
 {
     public class GlobalNotificationHandler : GlobalHandler<GlobalNotificationHandler>, IStaticHandler
     {

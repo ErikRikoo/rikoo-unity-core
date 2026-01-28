@@ -1,4 +1,4 @@
-﻿namespace Script.Runtime.Core.Data
+﻿namespace Rikoo.Core.Data
 {
     public interface IGameData
     {

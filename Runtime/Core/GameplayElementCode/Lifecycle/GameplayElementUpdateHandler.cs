@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Core.GameplayElementCode.Lifecycle
+namespace Rikoo.Core.GameplayElementCode.Lifecycle
 {
     public class GameplayElementUpdateHandler : MonoBehaviour
     {

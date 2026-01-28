@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using Script.Runtime.Core.GlobalHandlerManagement;
 using UnityEngine;
 
-namespace Script.Runtime.Core.Lifecycle
+namespace Rikoo.Core.Lifecycle
 {
     public partial class LifecycleHandler
     {
