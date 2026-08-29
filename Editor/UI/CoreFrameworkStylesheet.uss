@@ -1,0 +1,85 @@
+.full-size {
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal-flex {
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-right {
+    -unity-text-align: upper-right;
+}
+
+.flex-grow {
+    flex-grow: 2;
+}
+
+.text-middle {
+    -unity-text-align: middle-right;
+}
+
+.width-75 {
+    background-size: 75% 100%;
+    width: 75%;
+}
+
+.BoxGroup {
+    background-color: rgb(60, 60, 60);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgba(0, 0, 0, 0.67);
+    border-right-color: rgba(0, 0, 0, 0.67);
+    border-top-color: rgba(0, 0, 0, 0.67);
+    border-bottom-color: rgba(0, 0, 0, 0.67);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.BoxGroup > .Content {
+    background-color: rgb(56, 56, 56);
+    border-top-color: rgba(0, 0, 0, 0.67);
+    border-top-width: 1px;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.BoxGroup > .header {
+    flex-direction: row;
+    height: 22px;
+    padding-right: 4px;
+}
+
+.BoxGroup * {
+    color: var(--text-color);
+    -unity-background-image-tint-color: var(--text-color);
+    --text-color: rgb(171, 171, 171);
+}
+
+.BoxGroup > .header > #extra-info {
+    flex-direction: row;
+    flex-grow: 2;
+    top: 1px;
+    bottom: 1px;
+    height: 18px;
+}
+
+.width-50 {
+    width: 50%;
+}

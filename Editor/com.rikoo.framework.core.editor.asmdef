@@ -2,12 +2,14 @@
     "name": "com.rikoo.framework.core.editor",
     "rootNamespace": "Rikoo.Framework",
     "references": [
-        "GUID:621a9a54f748b0343906b15a23e12750"
+        "GUID:621a9a54f748b0343906b15a23e12750",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:fd9d043318e1a684da2e6d50ca58be8d"
     ],
-    "includePlatforms": [],
-    "excludePlatforms": [
+    "includePlatforms": [
         "Editor"
     ],
+    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],

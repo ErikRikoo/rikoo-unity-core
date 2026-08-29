@@ -1,9 +1,10 @@
-using Sirenix.OdinInspector;
+using System.Linq;
+using Rikoo.Framework.Core.Utilities;
 using UnityEngine;
 
 namespace Rikoo.Core.GameplayElementCode
 {
-    public class GameplayElementBehaviour : MonoBehaviour, ISearchFilterable
+    public class GameplayElementBehaviour : MonoBehaviour, IFilterable
     {
         [HideInInspector]
         public GameplayElement root;
@@ -27,8 +28,10 @@ namespace Rikoo.Core.GameplayElementCode
         
         public bool IsMatch(string searchString)
         {
-            string typeName = GetType().Name.ToLower();
-            return typeName.Contains(searchString.ToLower());
+            string typeName = GetType().Name;
+
+            return typeName.ToLower().StartsWith(searchString.ToLower()) ||
+                   typeName.SplitWords().Any(s => s.ToLower().StartsWith(searchString.ToLower()));
         }
     }
 }

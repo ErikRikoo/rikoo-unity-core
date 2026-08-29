@@ -1,0 +1,19 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.rikoo.framework.core/Editor/UI/CoreFrameworkStylesheet.uss?fileID=7433441132597879392&amp;guid=62071758c39dc8249824feacccb9fff0&amp;type=3#CoreFrameworkStylesheet"/>
+    <ui:VisualElement name="Root" data-source-type="Rikoo.Core.GameplayElementCode.GameplayElement, com.rikoo.framework.core.runtime" class="full-size" style="flex-grow: 1;">
+        <Rikoo.Framework.UI.ReadOnlySearchableListView name="BehaviorList" data-source-path="behaviours" are-element-enabled="true"/>
+        <Rikoo.Framework.UI.BoxGroup label="Debug" name="DebugBoxGroup" enabled="true" is-expanded="false">
+            <Rikoo.Framework.UI.ReadOnlySearchableListView name="UpdatableBehaviors" data-source-path="root.updatableBehaviours" enabled="true"/>
+            <Rikoo.Framework.UI.ReadOnlySearchableListView name="FixedUpdatableBehaviors" data-source-path="root.fixedUpdatableBehaviours" enabled="true"/>
+            <Rikoo.Framework.UI.ReadOnlySearchableListView name="NotifiableBehaviors" data-source-path="root.notifiableBehaviours" enabled="true"/>
+            <uie:ObjectField label="Object Field" name="UpdateHandlerField" data-source-path="root.updateHandler" enabled="false"/>
+            <uie:ObjectField label="Object Field" name="RigidbodyField" data-source-path="root.rigidbody" enabled="false"/>
+        </Rikoo.Framework.UI.BoxGroup>
+        <uie:ObjectField label="Object Field" type="UnityEngine.Transform, UnityEngine.CoreModule" data-source-path="artHolder" name="ArtHolderField" enabled="true"/>
+        <Rikoo.Framework.UI.BoxGroup name="BehaviorsDebug" label="Behaviour Debug"/>
+        <ui:VisualElement class="horizontal-flex" style="flex-grow: 1;">
+            <ui:Button text="Fetch All" name="FetchAllButton"/>
+            <ui:Button text="Easy Setup" name="EasySetupButton"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

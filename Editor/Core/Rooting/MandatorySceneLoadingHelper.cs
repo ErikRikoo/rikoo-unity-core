@@ -1,10 +1,11 @@
-﻿using UnityEditor;
+﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 namespace Rikoo.Framework.Core.Rooting.Editor
 {
-    public class MandatorySceneLoadingHelper
+    public static class MandatorySceneLoadingHelper
     {
         private static List<int> MandatorySceneIndexes = new() {1};
 		

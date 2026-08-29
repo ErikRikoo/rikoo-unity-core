@@ -2,38 +2,37 @@ using System.Collections.Generic;
 using Rikoo.Core.Data;
 using Rikoo.Core.GameplayElementCode.Lifecycle;
 using Rikoo.Core.Notification;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Rikoo.Core.GameplayElementCode
 {
     public partial class GameplayElement : MonoBehaviour
     {
-        [Searchable(FilterOptions = SearchFilterOptions.ISearchFilterableInterface), InlineEditor()]
         [SerializeField] private GameplayElementBehaviour[] behaviours;
         [SerializeField] private Transform artHolder;
 
-        [FoldoutGroup("Debug")]
-        [SerializeField, ReadOnly] private List<GameplayElementBehaviour> updatableBehaviours  = new();
-        [FoldoutGroup("Debug")]
-        [SerializeField, ReadOnly] private List<GameplayElementBehaviour> fixedUpdatableBehaviours  = new();
-        [FoldoutGroup("Debug")]
-        [SerializeField, ReadOnly] private List<GameplayElementBehaviour> notifiableBehaviours  = new();
-        [FoldoutGroup("Debug")]
-        [SerializeField, ReadOnly] private GameplayElementUpdateHandler updateHandler;
-        [FoldoutGroup("Debug")]
-        [SerializeField, ReadOnly] private Rigidbody rigidbody;
+        [SerializeField] private List<GameplayElementBehaviour> updatableBehaviours  = new();
+        [SerializeField] private List<GameplayElementBehaviour> fixedUpdatableBehaviours  = new();
+        [SerializeField] private List<GameplayElementBehaviour> notifiableBehaviours  = new();
+        [SerializeField] private GameplayElementUpdateHandler updateHandler;
+        [SerializeField] private Rigidbody rigidbody;
         
         private GameNotificationHandler notificationHandler = new();
         private DataInitializationHandler dataHandler = new();
 
         public Transform ArtHolder => artHolder;
 
+        public Rigidbody Rigidbody => rigidbody;
+
+        public GameplayElementBehaviour[] Behaviours => behaviours;
+
         public List<GameplayElementBehaviour> UpdatableBehaviours => updatableBehaviours;
 
         public List<GameplayElementBehaviour> FixedUpdatableBehaviours => fixedUpdatableBehaviours;
 
-        public int ID => GetInstanceID();
+        public List<GameplayElementBehaviour> NotifiableBehaviours => notifiableBehaviours;
+
+        public int ID => GetEntityId();
 
         public bool IsVisible
         {

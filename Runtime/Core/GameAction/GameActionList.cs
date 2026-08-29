@@ -1,12 +1,11 @@
-﻿using Sirenix.OdinInspector;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Rikoo.Core.GameAction
 {
     [CreateAssetMenu(fileName = "GameActionList", menuName = "Core/Game Action List", order = 0)]
     public class GameActionList : GameAction
     {
-        [SerializeField, InlineEditor] private GameAction[] actions;
+        [SerializeField] private GameAction[] actions;
 
         public override void Execute(GameActionContext context)
         {

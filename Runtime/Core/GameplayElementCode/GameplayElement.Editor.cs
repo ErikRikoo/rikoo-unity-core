@@ -1,7 +1,5 @@
 ﻿using Rikoo.Core.GameplayElementCode.Lifecycle;
 using Rikoo.Core.Notification;
-using Sirenix.OdinInspector;
-using Sirenix.Utilities.Editor;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,8 +7,15 @@ namespace Rikoo.Core.GameplayElementCode
 {
     public partial class GameplayElement
     {
+        public static string BehaviorFieldName => nameof(behaviours);
+        public static string UpdatableBehaviorFieldName => nameof(updatableBehaviours);
+        public static string FixedUpdatableBehaviorFieldName => nameof(fixedUpdatableBehaviours);
+        public static string NotifiableBehaviorFieldName => nameof(notifiableBehaviours);
+        public static string RigidbodyFieldName => nameof(rigidbody);
+        public static string ArtHolderFieldName => nameof(artHolder);
+        public static string UpdateHandlerFieldName => nameof(updateHandler);
+        
         #if UNITY_EDITOR
-        [ButtonGroup("Setup"), Button, PropertyOrder(1)]
         public void FetchAll()
         {
             behaviours = GetComponentsInChildren<GameplayElementBehaviour>();
@@ -48,9 +53,9 @@ namespace Rikoo.Core.GameplayElementCode
                 );
         }
 
-        [ButtonGroup("Setup"), Button, PropertyOrder(1)]
         public void EasySetup()
         {
+            // TODO: Just fill up items if already set
             FetchAll();
             GameObject root = new("Root");
             root.transform.parent = transform;
@@ -61,7 +66,6 @@ namespace Rikoo.Core.GameplayElementCode
             behaviors.transform.parent = root.transform;
         }
 
-        [OnInspectorGUI, PropertyOrder(2)]
         public void GameplayElementStateInspectorGUI()
         {
             if (!Application.isPlaying)
@@ -76,7 +80,6 @@ namespace Rikoo.Core.GameplayElementCode
             EditorGUILayout.EndHorizontal();
         }
         
-        [FoldoutGroup("Behaviour Debug"), OnInspectorGUI, PropertyOrder(0)]
         public void GameplayElementStateInspectorGUI2()
         {
             foreach (var behaviour in behaviours)
@@ -91,7 +94,7 @@ namespace Rikoo.Core.GameplayElementCode
             {
                 if (behaviour.HasCustomDebugData && !behaviour.IsInlinedEditor)
                 {
-                    behaviour.isEditorExpanded = SirenixEditorGUI.Foldout(behaviour.isEditorExpanded, behaviour.GetType().Name);
+                    // behaviour.isEditorExpanded = SirenixEditorGUI.Foldout(behaviour.isEditorExpanded, behaviour.GetType().Name);
                     if (!behaviour.isEditorExpanded)
                     {
                         continue;
