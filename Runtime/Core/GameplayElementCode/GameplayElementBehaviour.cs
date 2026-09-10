@@ -9,7 +9,7 @@ namespace Rikoo.Core.GameplayElementCode
         [HideInInspector]
         public GameplayElement root;
 
-        public int ID => root.ID;
+        public EntityId ID => root.ID;
 
         public string GPEName => root.gameObject.name;
         

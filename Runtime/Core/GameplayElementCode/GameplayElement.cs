@@ -32,7 +32,7 @@ namespace Rikoo.Core.GameplayElementCode
 
         public List<GameplayElementBehaviour> NotifiableBehaviours => notifiableBehaviours;
 
-        public int ID => GetEntityId();
+        public EntityId ID => GetEntityId();
 
         public bool IsVisible
         {
